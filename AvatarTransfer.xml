@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ - Avatar Attachments Transfer Modification for SMF forums c/o Underdog @ http://webdevelop.comli.com
+ - Copyright 2014 underdog@webdevelop.comli.com
+ - This software package is distributed under the terms of its CC BY-ND 4.0 License: http://creativecommons.org/licenses/by-nd/4.0/
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>underdog:avatarTransfer</id>
+	<name>Avatar Attachments Transfer</name>
+	<version>1.0</version>
+	<file name="$sourcedir/ManageAttachments.php">
+		<operation>
+			<search position="after"><![CDATA[	if ($return_config)
+		return $config_vars;
+
+	// We need these files for the inline permission settings, and the settings template.]]></search>
+			<add><![CDATA[	// add avatar transfer setting to the $config_vars array
+	require_once($sourcedir . '/AvatarTransfer.php');
+        $config_vars = avatar_add_context($config_vars);
+
+]]></add>
+		</operation>
+	</file>
+	<file name="$sourcedir/Help.php">
+		<operation>
+			<search position="after"><![CDATA[	// Permission specific help?]]></search>
+			<add><![CDATA[	// Load the Avatar Transfer Help language file
+	loadLanguage('AvatarTransferHelp');
+
+]]></add>
+		</operation>
+	</file>
+</modification>

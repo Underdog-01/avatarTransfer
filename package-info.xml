@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	ATTENTION: If you are trying to install this manually, you should try
+	the package manager.  If it will not work for you, please take a look
+	at the following for information on this format:
+		http://mods.simplemachines.org/docs/manual-install.php
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ - Avatar Attachments Transfer Modification for SMF forums c/o Underdog @ http://webdevelop.comli.com
+ - Copyright 2014 underdog@webdevelop.comli.com
+ - This software package is distributed under the terms of its CC BY-ND 4.0 License: http://creativecommons.org/licenses/by-nd/4.0/
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>underdog:avatarTransfer</id>
+	<name>Avatar Attachments Transfer</name>
+	<version>1.0</version>
+	<type>modification</type>
+	<!-- ###################          SMF2.0x          ################### -->
+	<install for="2.0 - 2.0.99">
+		<readme parsebbc="true">readme.txt</readme>
+		<require-dir name="Sources" destination="$boarddir" />
+		<require-dir name="avatars" destination="$boarddir" />
+		<require-dir name="Themes" destination="$boarddir" />
+		<modification format="xml" type="file">AvatarTransfer.xml</modification>
+		<redirect url="$scripturl?action=admin;area=manageattachments;sa=avatars;" timeout="5000">pkg_readme.txt</redirect>
+	</install>
+	<uninstall for="2.0 - 2.0.99">
+		<remove-file name="$sourcedir/AvatarTransfer.php" />
+		<remove-file name="$languagedir/AvatarTransfer.english.php" />
+		<remove-file name="$languagedir/AvatarTransferHelp.english.php" />
+		<remove-file error="skip" name="$languagedir/AvatarTransfer.english-utf8.php" />
+		<remove-file error="skip" name="$languagedir/AvatarTransferHelp.english-utf8.php" />
+		<modification format="xml" type="file" reverse="true">AvatarTransfer.xml</modification>
+		<redirect url="$scripturl?action=admin;area=packages;" timeout="5000">uninstall_readme.txt</redirect>
+	</uninstall>
+</package-info>
