@@ -2,7 +2,11 @@
 /*
 *	<id>underdog:avatarTransfer</id>
 *	<name>Avatar Attachments Transfer Modification</name>
-*	<version>1.0</version>
+<<<<<<< HEAD
+*	<version>1.2</version>
+=======
+*	<version>1.1</version>
+>>>>>>> origin/master
 *	<type>modification</type>
 */
 
@@ -57,7 +61,6 @@ function avatar_add_context($config_vars)
 		avatar_transfer_dir();
 
 	$config_vars = avatar_transfer_array_insert($config_vars, array(
-		'',
 		array('title', 'avatar_transfer_title'),
 			array('check', 'avatar_transfer', 0, 'onclick' => $agree, 'subtext' => $subtext),
 			array('check', 'avatar_transfer_same', 1),
@@ -207,4 +210,21 @@ function deleteAvatarFile($file)
 
 	return true;
 }
+<<<<<<< HEAD
+
+// SMF 2.1.X - Add settings
+function avatar_transfer_avatar(&$config_vars)
+{
+	$config_vars = avatar_add_context($config_vars);
+}
+
+// SMF 2,1,X - Load the Avatar Transfer Help language file
+function avatar_transfer_help()
+{
+	global $helptxt;
+	loadLanguage('AvatarTransferHelp');
+}
 ?>
+=======
+?>
+>>>>>>> origin/master

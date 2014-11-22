@@ -2,7 +2,11 @@
 /*
 *	<id>underdog:avatarTransfer</id>
 *	<name>Avatar Attachments Transfer Tool</name>
-*	<version>1.0</version>
+<<<<<<< HEAD
+*	<version>1.2</version>
+=======
+*	<version>1.1</version>
+>>>>>>> origin/master
 *	<type>modification</type>
 */
 

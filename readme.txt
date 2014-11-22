@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+SMF 2.0.X/2.1.X - Avatar Attachments Transfer Modification c/o Underdog
+Version 1.2
+=======
 SMF 2.0.X - Avatar Attachments Transfer Modification c/o Underdog
-Version 1.0
+Version 1.1
+>>>>>>> origin/master
 
 
 This installation process will add options to the avatar settings template
@@ -11,6 +16,16 @@ Distributed under the [url=http://creativecommons.org/licenses/by-nd/4.0/]CC BY-
 
 Version History
 ---------------
+
+<<<<<<< HEAD
+v1.2
++ added SMF 2.1.X support
+
+=======
+>>>>>>> origin/master
+v1.1
+! fixed grammar in help text
+! removed horizontal rule within admin template
 
 v1.0
 + adds checkbox to Admin section under the heading of Avatar Settings

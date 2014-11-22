@@ -8,7 +8,11 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 	<id>underdog:avatarTransfer</id>
 	<name>Avatar Attachments Transfer</name>
-	<version>1.0</version>
+<<<<<<< HEAD
+	<version>1.2</version>
+=======
+	<version>1.1</version>
+>>>>>>> origin/master
 	<file name="$sourcedir/ManageAttachments.php">
 		<operation>
 			<search position="after"><![CDATA[	if ($return_config)
