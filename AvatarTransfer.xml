@@ -21,7 +21,7 @@
 	// We need these files for the inline permission settings, and the settings template.]]></search>
 			<add><![CDATA[	// add avatar transfer setting to the $config_vars array
 	require_once($sourcedir . '/AvatarTransfer.php');
-        $config_vars = avatar_add_context($config_vars);
+	$config_vars = avatar_add_context($config_vars);
 
 ]]></add>
 		</operation>

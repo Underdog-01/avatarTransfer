@@ -8,6 +8,6 @@
 >>>>>>> origin/master
 	<p>Thank you for opting to use this modification.</p>
 	<p>You will now be redirected to your avatar settings page.</p>
-        <p>Distributed under the CC BY-ND 4.0 License (http://creativecommons.org/licenses/by-nd/4.0/)</p>
+	<p>Distributed under the CC BY-ND 4.0 License (http://creativecommons.org/licenses/by-nd/4.0/)</p>
 </div>
 

@@ -45,7 +45,7 @@
 		<readme parsebbc="true">readme.txt</readme>
 		<require-dir name="Sources" destination="$boarddir" />
 		<require-dir name="avatars" destination="$boarddir" />
-		<require-dir name="Themes" destination="$boarddir" />		
+		<require-dir name="Themes" destination="$boarddir" />
 		<redirect url="$scripturl?action=admin;area=manageattachments;sa=avatars;" timeout="5000">pkg_readme.txt</redirect>
 		<code>avatarTransferHooks.php</code>
 	</install>
@@ -54,7 +54,7 @@
 		<remove-file name="$languagedir/AvatarTransfer.english.php" />
 		<remove-file name="$languagedir/AvatarTransferHelp.english.php" />
 		<remove-file error="skip" name="$languagedir/AvatarTransfer.english-utf8.php" />
-		<remove-file error="skip" name="$languagedir/AvatarTransferHelp.english-utf8.php" />		
+		<remove-file error="skip" name="$languagedir/AvatarTransferHelp.english-utf8.php" />
 		<redirect url="$scripturl?action=admin;area=packages;" timeout="5000">uninstall_readme.txt</redirect>
 		<code>uninstall_avatarTransferHooks.php</code>
 	</uninstall>
